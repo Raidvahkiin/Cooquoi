@@ -1,12 +1,11 @@
 import { useState } from "react";
 import { Button } from "@mui/base/Button";
-import reactLogo from "./assets/react.svg";
+import reactLogo from "../assets/react.svg";
 import viteLogo from "/vite.svg";
-import "./App.css";
+import "./HomePage.css";
 
-function App() {
+export const HomePage = () => {
   const [count, setCount] = useState(0);
-
   return (
     <>
       <div>
@@ -31,6 +30,4 @@ function App() {
       </p>
     </>
   );
-}
-
-export default App;
+};
