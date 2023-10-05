@@ -1,5 +1,5 @@
 import axios from "axios";
-import { BACK_END_URL_BASE } from "../../constant";
+import { BACK_END_URL_BASE } from "@src/constant";
 
 const sanitizeUrl = (url: string) => {
   if (url.endsWith("/")) {
@@ -21,5 +21,3 @@ export const createNewStorage = async (name: string): Promise<string> => {
     `createNewSession failed with http status ${response.status}`,
   );
 };
-
-export const getAll;

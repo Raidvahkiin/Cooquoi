@@ -1,7 +1,7 @@
-import { ChangeEvent, useState } from "react";
 import { Button, Input } from "@mui/material";
+import { createNewStorage } from "@src/services/backendClient/client";
+import { ChangeEvent, useState } from "react";
 import "./HomePage.css";
-import { createNewStorage } from "../services/backendClient/client";
 
 export const HomePage = () => {
   const [newStorageName, setNewStorageName] = useState("");
